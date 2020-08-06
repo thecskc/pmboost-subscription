@@ -46,6 +46,27 @@
         };
         heap.load("2654694576");
     </script>
+    <!-- DO NOT MODIFY -->
+    <!-- Quora Pixel Code (JS Helper) -->
+    <script>
+        !function (q, e, v, n, t, s) {
+            if (q.qp) return;
+            n = q.qp = function () {
+                n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments);
+            };
+            n.queue = [];
+            t = document.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = document.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s);
+        }(window, 'script', 'https://a.quora.com/qevents.js');
+        qp('init', '9de65d839b714bd39783b5e193a0ac2f');
+        qp('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" src="https://q.quora.com/_/ad/9de65d839b714bd39783b5e193a0ac2f/pixel?tag=ViewContent&noscript=1" style="display:none"
+                   width="1"/></noscript>
+    <!-- End of Quora Pixel Code -->
 </head>
 <body>
 <div class="navigation w-nav" data-animation="default" data-collapse="medium" data-duration="400" role="banner">
@@ -53,9 +74,11 @@
         <div class="navigation-side-plain"><a aria-current="page" class="brand w-nav-brand w--current" href="index.html"><img
                 alt="" class="logo" sizes="80px" src="images/exchange-logo-1.png"
                 srcset="images/exchange-logo-1-p-500.png 500w, images/exchange-logo-1.png 2500w"></a>
-            <nav class="nav-menu w-nav-menu" role="navigation"><a class="nav-link w-nav-link" href="#Benefits">Benefits</a><a class="nav-link w-nav-link"
-                                                                                                                              href="#course-details">View
-                Lectures</a><a class="nav-link w-nav-link" href="#Testimonial">What our subscribers say</a><a class="nav-link w-nav-link" href="#Instructors"
+            <nav class="nav-menu w-nav-menu" role="navigation"><a class="nav-link w-nav-link" href="#Benefits">Benefits</a><a
+                    class="nav-link w-nav-link"
+                    href="#course-details">View
+                Lectures</a><a class="nav-link w-nav-link" href="#Testimonial">What our subscribers say</a><a class="nav-link w-nav-link"
+                                                                                                              href="#Instructors"
                                                                                                               id="I">Instructors</a><a
                     class="nav-link w-nav-link" href="#Program-and-Price-Details">Pricing</a><a class="nav-link w-nav-link" href="#sample-lecture">Sample
                 Lecture</a><a class="nav-link w-nav-link" href="#FAQ">FAQ</a></nav>
@@ -73,7 +96,8 @@
                 <h1 class="heading">Boost Your Product Management Career</h1>
                 <p class="hero-paragraph"><strong>Get access to exclusive lectures by product leaders, product case studies, job search resources, and
                     a private community. <br><br>Grow your product skills, land your dream PM job and become the best PM you can be with Boost.
-                </strong><br></p><a class="button w-button" href="https://forms.gle/Lz7d1ZsdKYH58L5k6" target="_blank">Get Early Access</a></div>
+                </strong><br></p><a class="button w-button" href="https://forms.gle/Lz7d1ZsdKYH58L5k6" onclick="generateLeadAndFormEvent()"
+                                    target="_blank">Get Early Access</a></div>
             <div class="video-block" id="w-node-6ab4507e16a0-7c53afc1"></div>
         </div>
     </div>
@@ -121,7 +145,8 @@
     </div>
 </div>
 <div class="content-section" id="course-details"><img alt="" class="side-pattern" src="images/Side-Shape.svg"><img alt=""
-                                                                                                                   class="side-pattern-right" src="images/Side-Shape-Circle.svg">
+                                                                                                                   class="side-pattern-right"
+                                                                                                                   src="images/Side-Shape-Circle.svg">
     <div class="container">
         <div class="title-wrap"
              data-w-id="0d1be829-5632-7900-10a0-7ed011bf1b9f"
@@ -275,10 +300,12 @@
                 <div class="mask w-slider-mask">
                     <div class="slide-2 w-slide">
                         <div class="testimonial-card">
-                            <div class="image-wrapper"><img alt="Testimonial Image" class="testimonial-image" src="images/vs.jpeg"><a class="play-button w-inline-block w-lightbox"
-                                                                                                                                      href="#"><img
+                            <div class="image-wrapper"><img alt="Testimonial Image" class="testimonial-image" src="images/vs.jpeg"><a
+                                    class="play-button w-inline-block w-lightbox"
+                                    href="#"><img
                                     alt=""
-                                    class="play-icon" src="https://uploads-ssl.webflow.com/5f17f906541b4e0e36cfbc36/5f17f9077e99c7185eb34775_play-button%20(1).svg">
+                                    class="play-icon"
+                                    src="https://uploads-ssl.webflow.com/5f17f906541b4e0e36cfbc36/5f17f9077e99c7185eb34775_play-button%20(1).svg">
                                 <script class="w-json" type="application/json">{
                                     "items": [
                                         {
@@ -400,7 +427,8 @@
             <div class="w-embed-youtubevideo" id="w-node-a43ad05b5636-7c53afc1" style="padding-top:56.17021276595745%">
                 <iframe allow="autoplay; encrypted-media"
                         allowfullscreen="" frameborder="0"
-                        src="https://www.youtube-nocookie.com/embed/qeZvOdIa-q8?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=1&amp;start=740" style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto"></iframe>
+                        src="https://www.youtube-nocookie.com/embed/qeZvOdIa-q8?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=1&amp;start=740"
+                        style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto"></iframe>
             </div>
         </div>
     </div>
@@ -490,6 +518,11 @@
     });
     $('.counter').addClass('animated fadeInDownBig');
     $('h3').addClass('animated fadeIn');
+
+    function generateLeadAndFormEvent(event) {
+        console.log("generate lead event");
+        qp('track', 'GenerateLead');
+    }
 </script>
 </body>
 </html>
